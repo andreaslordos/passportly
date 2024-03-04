@@ -99,24 +99,32 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Worldle /> has been <span className="font-bold">heavily</span> inspired
+        <Worldle /> is a‎ ‎  
+          <a 
+            className="underline" 
+            href="https://github.com/markgalassi/worldle" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Worldle fork
+          </a> and has been <span className="font-bold">heavily</span> inspired
         by{" "}
         <a
           className="underline"
-          href="https://www.powerlanguage.co.uk/wordle/"
+          href="https://worldle.teuteuf.fr"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Wordle
+          Worldle
         </a>{" "}
         created by{" "}
         <a
           className="underline"
-          href="https://twitter.com/powerlanguish"
+          href="https://twitter.com/teuteuf"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Josh Wardle (@powerlanguish)
+          @teuteuf
         </a>
         .
       </div>
@@ -125,22 +133,11 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           Made by{" "}
           <a
             className="underline"
-            href="https://twitter.com/teuteuf"
+            href="https://twitter.com/aglordos"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @teuteuf
-          </a>
-        </div>
-        <div>
-          Want to support?{" "}
-          <a
-            className="underline"
-            href="https://www.ko-fi.com/teuteuf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Buy me a coffee! ☕
+            @aglordos
           </a>
         </div>
       </div>

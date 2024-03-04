@@ -105,11 +105,11 @@ export function Game({ settingsData }: GameProps) {
       )}
       <div className="my-1">
         <img
-          className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert ${
+          className={`max-h-52 m-auto transition-transform duration-700 ease-in ${
             hideImageMode && !gameEnded ? "h-0" : "h-full"
           }`}
           alt="country to guess"
-          src={`images/countries/${country.code.toLowerCase()}/vector.svg`}
+          src={`images/countries/${country.code.toLowerCase()}/passport.webp`}
           style={
             rotationMode && !gameEnded
               ? {

@@ -11,7 +11,7 @@ import { Guess } from "../domain/guess";
 import React from "react";
 import { SettingsData } from "../hooks/useSettings";
 
-const START_DATE = DateTime.fromISO("2022-01-21");
+const START_DATE = DateTime.fromISO("2024-03-04");
 
 interface ShareProps {
   guesses: Guess[];
@@ -44,7 +44,7 @@ export function Share({
       : rotationMode
       ? " 🌀"
       : "";
-    const title = `#Worldle #${dayCount} ${guessCount}/6${difficultyModifierEmoji}`;
+    const title = `#Passportle #${dayCount} ${guessCount}/6${difficultyModifierEmoji}`;
 
     const guessString = guesses
       .map((guess) => {
