@@ -38,4 +38,4 @@ country_list = filter(check_len, os.listdir("countries"))
 
 for country in country_list:
     print(country)
-    blur_letters(f"countries/{country}/passport.webp")
+    blur_letters(f"public/images/countries/{country}/passport.webp")

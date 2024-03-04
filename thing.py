@@ -626,7 +626,7 @@ def print_dict(list_of_dicts):
         print("{code: '" + d['code'] + "', latitude: " + str(d['latitude']) + ", longitude: " + str(d['latitude']) + ", name: '" + d['name'] + "'},")
     print("]")
 
-country_codes = os.listdir("countries")
+country_codes = os.listdir("public/images/countries")
 
 correct = []
 for country in countries:
