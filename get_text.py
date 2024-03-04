@@ -3,7 +3,7 @@ import pytesseract
 from pytesseract import Output
 import os
 
-def blur_letters(image_path):
+def blur_letters(image_path, country):
     # Load the image
     img = cv2.imread(image_path)
     
@@ -24,18 +24,18 @@ def blur_letters(image_path):
             img[y:y+h, x:x+w] = cv2.blur(img[y:y+h, x:x+w], (25, 25))
     
     # Save or display the blurred image
-    # cv2.imwrite('blurred_image.jpg', img)
-    cv2.imshow('Blurred Image', img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    cv2.imwrite(f"public/images/countries/{country}/passport_blurred.jpg", img)
+    # cv2.imshow('Blurred Image', img)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
 
 def check_len(x):
     return len(x) == 2
 # Example usage
 # blur_letters('path_to_your_image.jpg')
-country_list = filter(check_len, os.listdir("countries"))
+country_list = filter(check_len, os.listdir("public/images/countries"))
 
 for country in country_list:
     print(country)
-    blur_letters(f"public/images/countries/{country}/passport.webp")
+    blur_letters(f"public/images/countries/{country}/passport.webp", country)
