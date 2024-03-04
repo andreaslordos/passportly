@@ -10,8 +10,24 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: npm run build
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
+          node-version: 20.9.x
+          # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm
+          cache: npm
+
+      - name: Install dependencies
+        run: npm i
+        
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Firebase
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
