@@ -1,6 +1,6 @@
 {
-  "short_name": "Worldle",
-  "name": "Wordle game in the World",
+  "short_name": "Passportle",
+  "name": "Passportle - guess the passport",
   "icons": [
     {
       "src": "favicon.ico",
