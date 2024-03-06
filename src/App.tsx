@@ -77,14 +77,7 @@ function App() {
           </header>
           <Game settingsData={settingsData} />
           <footer className="flex justify-center text-sm mt-8 mb-1">
-            ❤️ <Worldle />
-            <a
-              className="underline pl-1"
-              href="https://www.ko-fi.com/teuteuf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            </a>
+            <Worldle />, made for my best friends with ❤️ 
           </footer>
         </div>
       </div>
