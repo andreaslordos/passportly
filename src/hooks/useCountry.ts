@@ -4,12 +4,13 @@ import { countriesWithImage, Country } from "../domain/countries";
 
 const forcedCountries: Record<string, string> = {
   "2024-04-01": "CY",
+  "2024-04-22": "GB",
   "2024-05-01": "IS",
+  "2024-05-09": "AT",
+  "2024-05-13": "ES",
   "2024-07-08": "JP",
   "2024-11-21": "LB",
-  "2025-01-08": "BD",
-  "2024-05-13": "ES",
-  "2024-04-22": "GB"
+  "2025-01-08": "BD"
 };
 
 export function useCountry(dayString: string): [Country, number, number] {
