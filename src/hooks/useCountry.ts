@@ -4,7 +4,7 @@ import { countriesWithImage, Country } from "../domain/countries";
 
 const forcedCountries: Record<string, string> = {
   "2024-04-01": "CY",
-  "2024-04-22": "GB",
+  "2024-04-23": "GB",
   "2024-05-01": "IS",
   "2024-05-09": "AT",
   "2024-05-13": "ES",
