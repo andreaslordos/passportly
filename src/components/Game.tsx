@@ -109,7 +109,7 @@ export function Game({ settingsData }: GameProps) {
             hideImageMode && !gameEnded ? "h-0" : "h-full"
           }`}
           alt="country to guess"
-          src={`images/countries/${country.code.toLowerCase()}/passport_blurred.jpg`}
+          src={`images/countries/${country.code.toLowerCase()}/passport_new__blurred__.png`}
           style={
             rotationMode && !gameEnded
               ? {
