@@ -11,7 +11,7 @@ import { Guess } from "../domain/guess";
 import React from "react";
 import { SettingsData } from "../hooks/useSettings";
 
-const START_DATE = DateTime.fromISO("2024-03-04");
+const START_DATE = DateTime.fromISO("2024-07-11");
 
 interface ShareProps {
   guesses: Guess[];
@@ -53,7 +53,7 @@ export function Share({
       })
       .join("\n");
 
-    return [title, guessString, "https://passportly.web.app/"].join("\n");
+    return [title, guessString, "https://passportle.lordos.tech/"].join("\n");
   }, [dayString, guesses, hideImageMode, rotationMode, theme]);
 
   return (
