@@ -77,7 +77,14 @@ function App() {
           </header>
           <Game settingsData={settingsData} />
           <footer className="flex justify-center text-sm mt-8 mb-1">
-            <Worldle />, made for my best friends with ❤️ 
+            <div>
+              <div className="flex justify-center text-sm">
+                <a href="https://buymeacoffee.com/lordos"><ul><b>Buy me a coffee :)</b></ul></a>
+              </div>
+              <div>
+                <Worldle />, made for my best friends with ❤️
+              </div>
+            </div>
           </footer>
         </div>
       </div>
